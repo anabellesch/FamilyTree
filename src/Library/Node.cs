@@ -8,6 +8,8 @@ namespace Library
     {
         private int number;
 
+        private Persona Padre;
+
         private List<Node> children = new List<Node>();
 
         public int Number {
@@ -24,9 +26,9 @@ namespace Library
             }
         }
 
-        public Node(int number)
+        public Node(Persona Padre)
         {
-            this.number = number;
+            this.Padre = Padre;
         }
 
         public void AddChildren(Node n)
